@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Component Kitchen Remodel</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      max-width: 1120px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: inherit;
+      margin: 0 0 5px 0;
+    }
+    h1.smaller {
+      font-size: 45px;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    nav {
+      align-items: center;
+      display: flex;
+      font-variant: small-caps;
+      font-weight: bold;
+      padding: 40px 0;
+    }
+
+    #navLogo {
+      flex: 1;
+    }
+
+    #navLinks {
+      align-items: center;
+      display: flex;
+    }
+
+    nav a {
+      color: #4c5657;
+      display: inline-flex;
+      letter-spacing: 1px;
+      padding: 3px 0;
+      margin-left: 1em;
+      text-decoration: none;
+    }
+    nav a.active {
+      border-bottom: 1px solid #56c5be;
+    }
+
+    #elixLink {
+      align-items: center;
+      background: #56c5be;
+      border-radius: 20px;
+      border: none;
+      color: white;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+    }
+
+    .grayBlock {
+      /* background: #323b3e; */
+      background: linear-gradient(135deg, #3e4648, #1f2a2c);
+      color: #cdd9df;
+      font-size: 25px;
+      padding: 70px;
+    }
+
+    .grayBlock h1 {
+      color: #56c4c2;
+    }
+
+    .grayBlock p {
+      margin: 0;
+    }
+
+    p {
+      line-height: 1.6em;
+    }
+
+    .darkBlock {
+      background: #1f2a2c;
+      color: #f4f8f9;
+      padding: 60px 70px;
+    }
+
+    .darkBlock p {
+      margin: 0;
+    }
+
+    .darkBlock a {
+      color: #56c4c2;
+      text-decoration: none;
+    }
+    .darkBlock a:hover {
+      text-decoration: underline;
+    }
+
+    .halfBlock {
+      align-items: center;
+      display: flex;
+      padding: 24px 70px;
+      position: relative;
+    }
+
+    .elixBlock {
+      align-items: center;
+      /* background: #323b3e; */
+      background: #1f2a2c;
+      border-top: 2px solid #56c4c2;
+      color: white;
+      display: flex;
+      padding: 12px 70px;
+    }
+
+    #elixLogo {
+      margin-right: 2em;
+    }
+
+    #elixButton {
+      align-items: center;
+      /* background: #323b3e; */
+      background: none;
+      border: 2px solid #56c4c2;
+      /* border: none; */
+      border-radius: 20px;
+      color: white;
+      display: flex;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 2em;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+    }
+
+    #arrowIcon {
+      fill: #56c4c2;
+      margin-left: 0.5em;
+    }
+    
+    .aquaBlock {
+      background: linear-gradient(225deg, #44aaad, #58c2be);
+      color: white;
+      padding: 24px 70px;
+      /* text-shadow: 0 0 2px rgba(0,0,0,0.75); */
+    }
+    .aquaBlock .protrudingArrow {
+      background: #54bfbc;
+    }
+    .teal {
+      background: #308080;
+    }
+
+    .purpleBlock {
+      background: linear-gradient(225deg, #3d4c89, #576396);
+      color: white;
+    }
+    .purpleBlock .protrudingArrow {
+      background: #546094;
+    }
+
+    .orangeBlock {
+      background: linear-gradient(135deg, #e36c0f, #e68513);
+      color: white;
+    }
+    .orangeBlock .protrudingArrow {
+      background: #e68314;
+    }
+
+    .split {
+      display: flex;
+      justify-content: stretch;
+    }
+    .split > * {
+      flex: 1;
+    }
+
+    .protrudingArrow {
+      bottom: -20px;
+      height: 40px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 40px;
+    }
+
+    .placeholder {
+      background: #e3e4e9;
+      min-height: 300px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div id="navLogo">
+      <img src="ckLogo.png">
+    </div>
+    <div id="navLinks">
+      <a href="about:blank" class="active">home</a>
+      <a href="about:blank">services</a>
+      <a href="about:blank">blog</a>
+      <a href="about:blank">tutorial</a>
+      <a href="about:blank">about</a>
+      <a id="elixLink" href="about:blank">
+        <img src="elixLogoSmall.png">
+      </a>
+    </div>
+  </nav>
+  <section class="grayBlock">
+    <h1>Web component experts</h1>
+    <p>
+        Web components let you extend HTML with new capabilities. Component Kitchen are experts on this transformational technology. We design, develop, and customize web components so you can accelerate your work and improve your user experience.
+    </p>
+  </section>
+  <section class="elixBlock">
+    <img id="elixLogo" src="elixLogo.png">
+    <p>
+      Elix is our open source collection of common user interface patterns like lists, menus, popups, and carousels.
+    </p>
+    <div style="display: flex; align-items: center;">
+      <button id="elixButton">
+        <span>VIEW ELIX COMPONENTS</span>
+        <svg id="arrowIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+        </svg>      
+      </button>
+    </div>
+  </section>
+  <section class="split">
+    <div style="display: flex;">
+      <div class="halfBlock purpleBlock">
+        <h1 class="smaller">We create building blocks for your progressive web applications.</h1>
+        <div class="protrudingArrow"></div>
+      </div>
+    </div>
+    <div class="placeholder"></div>
+  </section>
+  <section class="darkBlock">
+    <p>
+      Progressive web apps can now deliver mobile and desktop experiences that previously required native apps. Building on a web code base gets the most out of your design and development resources, and gives your users a great experience instantly. Web components are a natural fit for progressive web apps. We can identify where web components will improve your product, migrate legacy UI code to components, create custom components for you, or architect a component-based foundation for whichever framework you’ve chosen.      
+    </p>
+  </section>
+  <section class="split">
+    <div class="placeholder"></div>
+    <div style="display: flex;">
+      <div class="halfBlock orangeBlock">
+        <h1 class="smaller">We standardize your design system to unify your brand.</h1>
+        <div class="protrudingArrow" style="right: 70px;"></div>
+      </div>
+    </div>
+  </section>
+  <section class="darkBlock">
+    <p>
+      Component Kitchen can implement a web design system for your company or project, large or small. We translate your design resources into live components ready for production use in any web project. Instead of working with generic, primitive &lt;img> and &lt;div> elements, your teams get new, standard-supported HTML elements tailored to your company: &lt;our-company-logo>, &lt;our-standard-toolbar>, or anything else your apps need. These fully-functional HTML elements embody your company's brand — from visual identity to aesthetics to interaction — to give all your users a great experience with pixel-perfect branding.
+    </p>
+  </section>
+  <section class="split">
+    <div style="display: flex;">
+      <div class="halfBlock aquaBlock">
+        <h1>We work in any front end framework.</h1>
+        <div class="protrudingArrow"></div>
+      </div>
+    </div>
+    <div class="placeholder"></div>
+  </section>
+  <section class="darkBlock">
+    <p>
+      Every framework — React, Angular, Ember, Vue, etc. — lets you efficiently create complex applications, but each has its own approach to building user interfaces. This makes it hard to reuse work and leads to inconsistencies, and the next framework shift will strand you with dead-end code. By helping you build the key pieces of your user interface with web components, you get durable code that works in any framework, now or future.
+    </p>
+  </section>
+  <section class="split">
+    <div class="placeholder"></div>
+    <div style="display: flex;">
+        <div class="halfBlock purpleBlock">
+          <h1 class="smaller">We help move the web forward.</h1>
+          <div class="protrudingArrow" style="background: #49578f; right: 70px;"></div>
+        </div>
+      </div>
+    </section>
+  <section class="darkBlock">
+    <p>
+      Component Kitchen contributes directly to the evolution of the underlying browser platform. We’re actively involved in advancing the web standards that make web components work. We wrote and maintain the
+      <a href="about:blank">Gold Standard checklist for web components</a>
+      to set the industry bar for web component quality. When you partner with us for your project, you directly benefit from this deep expertise and gain representation on these open industry efforts.
+    </p>
+  </section>
+  </body>
+
+</html>
